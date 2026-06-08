@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Condesa · Fonda Nais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a href="#" class="nav-logo">
+    Casa Condesa
+    <span>Fonda Nais · Morelia</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#filosofia">Nuestra Historia</a></li>
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#reservaciones" class="nav-cta">Reservar Mesa</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-tag reveal">Fonda de Autor · Morelia</p>
+    <h1 class="hero-title reveal reveal-delay-1">
+      Cocina que<br>
+      <em>abraza</em> el alma
+    </h1>
+    <p class="hero-subtitle reveal reveal-delay-2">
+      En Casa Condesa creemos que comer bien es un acto de amor. Ingredientes locales, recetas de memoria y un espacio donde el tiempo se detiene.
+    </p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <a href="#menu" class="btn-primary">Ver el Menú</a>
+      <a href="#reservaciones" class="btn-ghost">Reservar</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Interior Casa Condesa">
+    <div class="hero-badge">
+      <strong>8</strong>
+      <span>Años de sabor</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FILOSOFÍA ── -->
+<section id="filosofia">
+  <div class="section-inner">
+    <div class="filosofia-grid">
+      <div class="filosofia-text">
+        <p class="section-label reveal">Nuestra Filosofía</p>
+        <h2 class="section-title reveal reveal-delay-1">
+          Raíces que <em>inspiran</em>,<br>sabores que perduran
+        </h2>
+        <p class="reveal reveal-delay-2">
+          Casa Condesa nació del deseo de rescatar la cocina de fonda —esa que huele a hogar— y llevarla a un espacio contemporáneo donde cada detalle importa. Trabajamos con productores locales de Michoacán, honrando la milpa, el chile y el maíz.
+        </p>
+        <p class="reveal reveal-delay-2" style="margin-top:1rem;">
+          Cada plato es una conversación entre la tradición y la creatividad. No seguimos tendencias; escuchamos la tierra.
+        </p>
+        <div class="stats-row reveal reveal-delay-3">
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Local & Orgánico</span>
+          </div>
+          <div class="stat">
+            <strong>40+</strong>
+            <span>Platillos de Temporada</span>
+          </div>
+          <div class="stat">
+            <strong>8</strong>
+            <span>Años en Morelia</span>
+          </div>
+        </div>
+      </div>
+      <div class="filosofia-img reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Platillo Casa Condesa">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MENÚ ── -->
+<section id="menu">
+  <div class="section-inner" style="position:relative;z-index:2;">
+    <div class="menu-header">
+      <div>
+        <p class="section-label">Carta</p>
+        <h2 class="section-title">Nuestro <em>Menú</em></h2>
+      </div>
+      <p>Precios en pesos mexicanos. Carta sujeta a disponibilidad de temporada.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="switchTab('desayunos', this)">Desayunos</button>
+      <button class="menu-tab" onclick="switchTab('comidas', this)">Comidas</button>
+    </div>
+
+    <!-- DESAYUNOS -->
+    <div class="menu-panel active" id="panel-desayunos">
+      <div class="menu-category">
+        <h3 class="menu-category-title">Para Comenzar</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Agua de Temporada</span>
+              <span class="menu-item-desc">Fruta de la estación, jamaica o tamarindo</span>
+            </div>
+            <span class="menu-item-price">$45</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Café de Olla</span>
+              <span class="menu-item-desc">Canela, piloncillo, grano michoacano</span>
+            </div>
+            <span class="menu-item-price">$55</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Jugo Verde de la Casa</span>
+              <span class="menu-item-desc">Espinaca, pepino, piña, jengibre y limón</span>
+            </div>
+            <span class="menu-item-price">$65</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Atole de Guayaba</span>
+              <span class="menu-item-desc">Masa nixtamalizada, guayaba de rancho</span>
+            </div>
+            <span class="menu-item-price">$60</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category-title">Platillos Principales</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Chilaquiles Verdes</span>
+              <span class="menu-item-desc">Tomatillo asado, crema de rancho, queso añejo, huevo</span>
+            </div>
+            <span class="menu-item-price">$145</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Enfrijoladas de Autor</span>
+              <span class="menu-item-desc">Frijol negro con epazote, crema, queso y hierba santa</span>
+            </div>
+            <span class="menu-item-price">$135</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Huevos Rancheros CC</span>
+              <span class="menu-item-desc">Salsa de árbol y jitomate, tortilla de maíz azul, frijoles</span>
+            </div>
+            <span class="menu-item-price">$130</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Molletes de Fonda</span>
+              <span class="menu-item-desc">Pan artesanal, frijoles refritos, queso Cotija, pico de gallo</span>
+            </div>
+            <span class="menu-item-price">$110</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Tlayuda con Cecina</span>
+              <span class="menu-item-desc">Tortilla blanda, asientos, cecina michoacana, quesillo</span>
+            </div>
+            <span class="menu-item-price">$175</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Fruta de Temporada</span>
+              <span class="menu-item-desc">Selección de mercado con granola artesanal y yogur</span>
+            </div>
+            <span class="menu-item-price">$95</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMIDAS -->
+    <div class="menu-panel" id="panel-comidas">
+      <div class="menu-category">
+        <h3 class="menu-category-title">Antojitos & Entradas</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Sopa de Lima</span>
+              <span class="menu-item-desc">Caldo de pollo, lima yucateca, tortilla crujiente</span>
+            </div>
+            <span class="menu-item-price">$120</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Guacamole de la Casa</span>
+              <span class="menu-item-desc">Aguacate Michoacán, chile serrano, limón, cilantro</span>
+            </div>
+            <span class="menu-item-price">$105</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Caldo Tlalpeño</span>
+              <span class="menu-item-desc">Pollo de rancho, garbanzos, chile chipotle, epazote</span>
+            </div>
+            <span class="menu-item-price">$130</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Tostadas de Tinga</span>
+              <span class="menu-item-desc">Tinga de pollo con chipotle, crema, lechuga, queso</span>
+            </div>
+            <span class="menu-item-price">$115</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category-title">Platos Fuertes</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Mole Negro de Olla</span>
+              <span class="menu-item-desc">Pollo de rancho, arroz rojo, frijoles de olla, tortillas</span>
+            </div>
+            <span class="menu-item-price">$230</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Carnitas Estilo Michoacán</span>
+              <span class="menu-item-desc">Confitadas en manteca, salsas de la casa, tortillas de maíz</span>
+            </div>
+            <span class="menu-item-price">$210</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Enchiladas Rojas</span>
+              <span class="menu-item-desc">Pollo desmenuzado, chile guajillo, crema, queso añejo, cebolla morada</span>
+            </div>
+            <span class="menu-item-price">$175</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Chiles en Nogada (Temporada)</span>
+              <span class="menu-item-desc">Chile poblano relleno, nogada de nuez de castilla, granada</span>
+            </div>
+            <span class="menu-item-price">$265</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Cazuela de Verduras</span>
+              <span class="menu-item-desc">Vegetales de milpa, chile pasilla, hierba santa, queso fresco</span>
+            </div>
+            <span class="menu-item-price">$185</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Pollo en Crema Poblana</span>
+              <span class="menu-item-desc">Pechuga rellena de huitlacoche, crema de poblano, arroz verde</span>
+            </div>
+            <span class="menu-item-price">$220</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category-title">Postres</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Arroz con Leche de Rancho</span>
+              <span class="menu-item-desc">Leche bronca, canela, piloncillo, nuez</span>
+            </div>
+            <span class="menu-item-price">$85</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <span class="menu-item-name">Flan de Cajeta</span>
+              <span class="menu-item-desc">Cajeta artesanal de Celaya, nuez garapiñada</span>
+            </div>
+            <span class="menu-item-price">$95</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALERÍA ── -->
+<section id="galeria">
+  <div class="section-inner">
+    <div class="gallery-header reveal">
+      <p class="section-label">Atmósfera</p>
+      <h2 class="section-title">Un espacio <em>vivo</em></h2>
+    </div>
+    <div class="gallery-grid reveal reveal-delay-1">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Interior">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&q=80" alt="Platillo">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=80" alt="Bar">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Comida">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=500&q=80" alt="Detalle">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESERVACIONES ── -->
+<section id="reservaciones">
+  <div class="reserva-bg-text">Condesa</div>
+  <div class="reserva-inner">
+    <p class="section-label reveal">Reservaciones</p>
+    <h2 class="section-title reveal reveal-delay-1">Reserva tu <em>mesa</em></h2>
+    <p class="reveal reveal-delay-2">
+      Garantiza tu lugar en Casa Condesa. Para grupos de más de 8 personas o eventos privados, contáctanos directamente.
+    </p>
+    <div class="reserva-form reveal reveal-delay-3">
+      <div class="form-field">
+        <label>Nombre completo</label>
+        <input type="text" placeholder="Tu nombre">
+      </div>
+      <div class="form-field">
+        <label>Teléfono / WhatsApp</label>
+        <input type="tel" placeholder="+52 443 000 0000">
+      </div>
+      <div class="form-field">
+        <label>Fecha</label>
+        <input type="date">
+      </div>
+      <div class="form-field">
+        <label>Hora</label>
+        <select>
+          <option value="">Selecciona un horario</option>
+          <option>8:00 am — Desayuno</option>
+          <option>9:00 am — Desayuno</option>
+          <option>10:00 am — Desayuno</option>
+          <option>11:00 am — Desayuno</option>
+          <option>1:30 pm — Comida</option>
+          <option>2:30 pm — Comida</option>
+          <option>3:30 pm — Comida</option>
+          <option>4:30 pm — Comida</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Número de personas</label>
+        <select>
+          <option>1 persona</option>
+          <option>2 personas</option>
+          <option>3 personas</option>
+          <option>4 personas</option>
+          <option>5 – 8 personas</option>
+          <option>Grupo grande (8+)</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Ocasión especial</label>
+        <select>
+          <option>Sin ocasión especial</option>
+          <option>Cumpleaños</option>
+          <option>Aniversario</option>
+          <option>Reunión de negocios</option>
+          <option>Celebración familiar</option>
+        </select>
+      </div>
+      <div class="form-field full">
+        <label>Notas adicionales</label>
+        <input type="text" placeholder="Alergias, preferencias o peticiones especiales…">
+      </div>
+    </div>
+    <a href="https://wa.me/524430000000" class="btn-primary reveal reveal-delay-3" style="display:block;text-align:center;">
+      Confirmar Reservación
+    </a>
+  </div>
+</section>
+
+<!-- ── CONTACTO ── -->
+<section id="contacto">
+  <div class="section-inner">
+    <div class="contacto-grid">
+      <div class="contacto-brand reveal">
+        <a href="#" class="nav-logo">
+          Casa Condesa
+          <span>Fonda Nais</span>
+        </a>
+        <p>Un espacio de cocina mexicana contemporánea en el corazón de Morelia, Michoacán.</p>
+      </div>
+      <div class="contacto-col reveal reveal-delay-1">
+        <h4>Horarios</h4>
+        <p>Lunes a Viernes</p>
+        <p>Desayunos: 8:00 – 12:00</p>
+        <p>Comidas: 13:00 – 18:00</p>
+        <p style="margin-top:0.5rem;">Sábado y Domingo</p>
+        <p>Desayunos: 8:00 – 13:00</p>
+        <p>Comidas: 14:00 – 18:00</p>
+      </div>
+      <div class="contacto-col reveal reveal-delay-2">
+        <h4>Encuéntranos</h4>
+        <p>Morelia, Michoacán, México</p>
+        <a href="tel:+524430000000">+52 443 000 0000</a>
+        <a href="mailto:hola@casacondesa.mx">hola@casacondesa.mx</a>
+        <a href="https://instagram.com/" target="_blank">@casacondesa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2025 Casa Condesa · Fonda Nais — Todos los derechos reservados</p>
+  <span>Con amor desde Michoacán</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
